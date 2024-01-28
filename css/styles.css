@@ -451,7 +451,7 @@ p {
 .footer-container-social .social-text {
   /* width: 264px; */
   color: #fff;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -494,7 +494,7 @@ p {
 }
 .subscribe-text {
   color: #fff;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -516,7 +516,7 @@ p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: #2e2f42;
   color: #fff;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -545,7 +545,7 @@ p {
   color: #fff;
   text-align: center;
 
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -562,8 +562,10 @@ p {
 .subscribe-btn:focus {
   background-color: #404bbf;
 }
-*/
 
+.plane-svg {
+  margin-left: 16px;
+}
 
 /* #region Modal window */
 .backdrop {
@@ -571,16 +573,13 @@ p {
   top: 0;
   left: 0;
   z-index: 100;
-
   width: 100%;
   height: 100%;
-
   background-color: rgba(46, 47, 66, 0.4);
 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -631,7 +630,7 @@ p {
   background-color: #e7e9fc;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon-close {
   fill: #2e2f42;
@@ -641,6 +640,7 @@ p {
 .modal-btn-close:focus {
   background-color: #404bbf;
   border-color: transparent;
+  border: none;
 }
 .modal-btn-close:hover .modal-icon-close,
 .modal-btn-close:focus .modal-icon-close {
@@ -741,7 +741,8 @@ p {
   letter-spacing: 0.04em;
 }
 .custom-checkbox {
-  display: flex;
+  display: inline-flex;
+  fill: transparent;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
@@ -758,7 +759,7 @@ p {
 }
 .agreement-link {
   color: #4d5ae5;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
@@ -769,10 +770,11 @@ p {
 .input-checkbox:checked + .modal-form-label-checkbox > .custom-checkbox {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
 .modal-form-btn-send {
   cursor: pointer;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;

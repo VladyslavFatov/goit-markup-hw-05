@@ -563,10 +563,6 @@ p {
   background-color: #404bbf;
 }
 
-.plane-svg {
-  margin-left: 16px;
-}
-
 /* #region Modal window */
 .backdrop {
   position: fixed;
